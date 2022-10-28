@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/main_linearlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:id="@+id/text_view"
+            android:textColor="@color/black"
+            android:textSize="80sp"
+            android:layout_marginHorizontal="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/zero"
+
+            />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/main_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="274dp"
+            android:layout_height="73dp">
+
+            <Button
+                android:id="@+id/tw_ac"
+                style="@style/btn"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="34dp"
+                android:background="@drawable/ygly"
+                android:text="Ac"
+                android:onClick="onLogicClick"
+                android:textAllCaps="false"
+
+                />
+
+            <Button
+                android:id="@+id/tw_delete"
+                style="@style/btn"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ygly"
+                android:drawableStart="@drawable/ic_baseline_backspace_24"
+                android:paddingStart="17dp"
+                android:onClick="onLogicClick"
+                android:textAllCaps="false"
+
+                />
+
+            <Button
+                android:id="@+id/tw_del"
+                android:onClick="creat"
+                style="@style/btn2"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/forblye"
+                android:text="/"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <Button
+                android:id="@+id/btn_seven"
+                style="@style/btn3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="34dp"
+                android:background="@drawable/number"
+                android:text="7"
+                android:onClick="onLogicClick"
+                android:textColor="@color/blue2"
+
+                />
+
+            <Button
+                android:id="@+id/btn_eight"
+                style="@style/btn3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/number"
+                android:text="8"
+                android:onClick="onLogicClick"
+                android:textColor="@color/blue2"
+
+                />
+
+            <Button
+                android:id="@+id/btn_nine"
+                style="@style/btn3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/number"
+                android:text="9"
+                android:onClick="onLogicClick"
+                android:textColor="@color/blue2"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <Button
+                android:id="@+id/btn_four"
+                style="@style/btn3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="34dp"
+                android:background="@drawable/number"
+                android:text="4"
+                android:onClick="onLogicClick"
+                android:textColor="@color/blue2"
+
+                />
+
+            <Button
+                android:id="@+id/btn_five"
+                style="@style/btn3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/number"
+                android:text="5"
+                android:onClick="onLogicClick"
+                android:textColor="@color/blue2"
+
+                />
+
+            <Button
+                android:id="@+id/btn_six"
+                style="@style/btn3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/number"
+                android:text="6"
+                android:onClick="onLogicClick"
+                android:textColor="@color/blue2"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <Button
+                android:id="@+id/btn_one"
+                style="@style/btn3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:onClick="onLogicClick"
+                android:layout_marginStart="34dp"
+                android:background="@drawable/number"
+                android:text="1"
+                android:textColor="@color/blue2" />
+
+            <Button
+                android:id="@+id/btn_two"
+                style="@style/btn3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/number"
+                android:text="2"
+                android:onClick="onLogicClick"
+                android:textColor="@color/blue2" />
+
+            <Button
+                android:id="@+id/btn_three"
+                style="@style/btn3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/number"
+                android:text="3"
+                android:onClick="onLogicClick"
+                android:textColor="@color/blue2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/btn_zero"
+                style="@style/btn3"
+                android:layout_width="144dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="34dp"
+                android:background="@drawable/number"
+                android:onClick="onLogicClick"
+                android:text="0"
+                android:textColor="@color/blue2" />
+
+            <Button
+                android:id="@+id/btn_tochka"
+                style="@style/btn3"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/number"
+                android:text="."
+                android:onClick="creat"
+                android:textColor="@color/blue2" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="301dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/main_linearlayout">
+
+        <Button
+            android:id="@+id/btn_tiple"
+            style="@style/btn2"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:background="@drawable/forblye"
+            android:text="*"
+            android:onClick="creat"
+            android:textColor="@color/blue2" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            style="@style/btn2"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:onClick="creat"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/forblye"
+            android:text="-"
+            android:textColor="@color/blue2" />
+
+        <Button
+            android:id="@+id/btn_plus"
+            style="@style/btn2"
+            android:layout_width="62dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/forblye"
+            android:text="+"
+            android:onClick="creat"
+            android:textColor="@color/blue2" />
+
+        <Button
+            android:id="@+id/btn_equal"
+            style="@style/btn2"
+            android:layout_width="62dp"
+            android:layout_height="96dp"
+            android:onClick="creat"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/forblye"
+            android:text="="
+
+            android:textColor="@color/blue2" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
